@@ -1,21 +1,36 @@
 {
-  "name": "awesomeproject",
-  "version": "1.0.0",
+  "name": "empower-mental-health-app",
+  "version": "0.0.1",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "dev:expo": "expo start",
+    "dev:and": "expo start --android",
+    "dev:ios": "expo start --ios",
+    "dev": "expo start --web",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix"
   },
   "dependencies": {
+    "@expo/metro-runtime": "~3.1.3",
     "expo": "~50.0.7",
     "expo-status-bar": "~1.11.1",
     "react": "18.2.0",
-    "react-native": "0.73.4"
+    "react-native": "0.73.4",
+    "react-native-web": "~0.19.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@tsconfig/react-native": "^3.0.3",
+    "@types/jest": "^29.5.12",
+    "@types/react": "^18.2.58",
+    "@types/react-test-renderer": "^18.0.7",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-native": "^4.1.0",
+    "typescript": "^5.3.3"
   },
   "private": true
 }
