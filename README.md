@@ -1,4 +1,4 @@
-## Empower Mental Health App
+## Empower Mental Health App - React Native project with Expo
 
 ## Description
 
