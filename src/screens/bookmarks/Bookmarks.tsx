@@ -1,9 +1,16 @@
 import { Text, View } from 'react-native';
+import { Layout } from '../../components';
 
-export const Bookmarks = () => {
+interface BookmarksProps {
+  navigation: any;
+}
+
+export const Bookmarks = ({ navigation }: BookmarksProps) => {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Bookmarks Screen</Text>
-    </View>
+    <Layout navigation={navigation}>
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <Text>Bookmarks Screen</Text>
+      </View>
+    </Layout>
   );
 };
