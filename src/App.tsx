@@ -15,7 +15,12 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}
+        initialRouteName="Home"
+      >
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Appointments" component={Appointments} />
         <Stack.Screen name="Bookmarks" component={Bookmarks} />
@@ -24,12 +29,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//   },
-// });
