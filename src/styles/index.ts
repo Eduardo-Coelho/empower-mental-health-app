@@ -1,1 +1,1 @@
-export * from './colors.styles';
+export * from './common.styles';
