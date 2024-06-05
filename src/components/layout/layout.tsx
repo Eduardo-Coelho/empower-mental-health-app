@@ -1,8 +1,9 @@
 import { Image, Text, View } from 'react-native';
 import { layoutStyles } from './layout.styles';
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useMemo } from 'react';
 import { NavigationBar } from '..';
 import { BlurView } from 'expo-blur';
+import { commonStyles } from '../../styles';
 
 type Screens = 'Home' | 'Appointments' | 'Bookmarks' | 'Settings';
 
@@ -17,25 +18,25 @@ export const Layout = ({
   currentScreen,
   navigation,
 }: LayoutProps) => {
+  const cachedURL = useMemo(() => require('../../assets/background.jpg'), []);
   return (
     <>
       <View style={layoutStyles.container}>
         <View>
           <Text>The nav</Text>
         </View>
-
-        <View style={{ flex: 1 }}>{children}</View>
+        <View>{children}</View>
       </View>
       <View>
-        <BlurView intensity={30} style={layoutStyles.blurContainer}>
+        <BlurView
+          intensity={100}
+          tint={'default'}
+          style={commonStyles.blurContainer()}
+        >
           <NavigationBar navigation={navigation} />
         </BlurView>
       </View>
-      <Image
-        source={require('../../assets/background.jpg')}
-        style={layoutStyles.background}
-        blurRadius={1}
-      />
+      <Image source={cachedURL} style={layoutStyles.background} />
     </>
   );
 };
