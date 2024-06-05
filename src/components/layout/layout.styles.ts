@@ -1,13 +1,11 @@
 import { StyleSheet } from 'react-native';
+import { commonStyles } from '../../styles';
 
 export const layoutStyles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
     flexDirection: 'column',
-  },
-  item: {
-    flex: 1,
   },
   background: {
     width: '100%',
@@ -18,10 +16,5 @@ export const layoutStyles = StyleSheet.create({
     bottom: 0,
     left: 0,
     zIndex: -2,
-  },
-  blurContainer: {
-    padding: 10,
-    borderRadius: 10,
-    backgroundColor: 'rgba(255, 255, 255, 0.5)',
   },
 });
