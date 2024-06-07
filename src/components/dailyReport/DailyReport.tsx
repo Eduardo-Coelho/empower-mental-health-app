@@ -18,7 +18,7 @@ const mockData = {
     {
       title: 'Feeling Anxious',
       description: 'I woke up today feeling anxious.',
-      date: 'Fri Jun 05 2024 11:16:56 GMT+0100',
+      date: 'Fri Jun 07 2024 12:58:11 GMT+0100',
     },
     {
       title: 'Depressed Mood',
@@ -175,6 +175,48 @@ export const DailyReport = () => {
     </View>
   );
 
+  const renderSymptoms = () => {
+    const symptomsRecorded = controls['today']
+      ? mockData.recordedSymptoms.filter((symptom) => {
+          const today = new Date();
+          const todayString = today.toDateString();
+          const symptomDate = new Date(symptom.date);
+          return symptomDate.toDateString() === todayString;
+        })
+      : mockData.recordedSymptoms;
+
+    return (
+      <ScrollView persistentScrollbar={true}>
+        {symptomsRecorded.map((item, index) => (
+          <View key={index} style={symptomCard}>
+            <Text style={h2}>{item.title}</Text>
+            <View style={symptomCardBody}>
+              <Text style={[small, { fontWeight: '700' }]}>
+                {item.description}
+              </Text>
+            </View>
+
+            <View style={symptomCardFooter}>
+              <Text
+                style={[
+                  small,
+                  {
+                    marginRight: 10,
+                    marginTop: 10,
+                    textAlign: 'right',
+                    fontWeight: '600',
+                  },
+                ]}
+              >
+                {formatDate(item.date)}
+              </Text>
+            </View>
+          </View>
+        ))}
+      </ScrollView>
+    );
+  };
+
   return (
     <>
       <View style={container}>
@@ -216,30 +258,8 @@ export const DailyReport = () => {
               </Text>
               <Text style={h3}>Weeks</Text>
             </View>
-            <View style={[container, { maxHeight: 150, flex: 2 }]}>
-              <ScrollView persistentScrollbar={true}>
-                {mockData.recordedSymptoms.map((item, index) => (
-                  <View key={index} style={symptomCard}>
-                    <Text style={h2}>{item.title}</Text>
-                    <View style={symptomCardBody}>
-                      <Text style={[small, { fontWeight: '700' }]}>
-                        {item.description}
-                      </Text>
-                    </View>
-
-                    <View style={symptomCardFooter}>
-                      <Text
-                        style={[
-                          small,
-                          { textAlign: 'right', fontWeight: '600' },
-                        ]}
-                      >
-                        {formatDate(item.date)}
-                      </Text>
-                    </View>
-                  </View>
-                ))}
-              </ScrollView>
+            <View style={[container, { height: 120, flex: 3 }]}>
+              {renderSymptoms()}
             </View>
           </View>
         </BlurView>
