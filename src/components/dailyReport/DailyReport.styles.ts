@@ -16,13 +16,30 @@ export const dailyReportStyles = StyleSheet.create({
     justifyContent: 'center',
   },
 
+  big: {
+    fontSize: 50,
+    ...common.text,
+  },
+
+  h1: {
+    fontSize: 40,
+    ...common.text,
+  },
+
   h2: {
     fontSize: 20,
     ...common.text,
   },
-  h1: {
-    fontSize: 40,
+
+  h3: {
+    fontSize: 17,
     ...common.text,
+  },
+
+  small: {
+    fontSize: 13,
+    fontFamily: commonStyles.android_fonts.sansSerifCondensed,
+    color: colors.ghostWhite,
   },
 
   conditionsContainer: {
@@ -45,5 +62,17 @@ export const dailyReportStyles = StyleSheet.create({
   label: {
     fontWeight: '700',
     fontSize: 15,
+  },
+
+  symptomCard: {
+    justifyContent: 'flex-start',
+    display: 'flex',
+    padding: 10,
+  },
+  symptomCardBody: {
+    marginTop: 10,
+  },
+  symptomCardFooter: {
+    marginTop: 5,
   },
 });
