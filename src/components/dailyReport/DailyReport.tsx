@@ -176,15 +176,14 @@ export const DailyReport = () => {
   );
 
   const renderSymptoms = () => {
+    const today = new Date();
+    const todayString = today.toDateString();
     const symptomsRecorded = controls['today']
       ? mockData.recordedSymptoms.filter((symptom) => {
-          const today = new Date();
-          const todayString = today.toDateString();
           const symptomDate = new Date(symptom.date);
           return symptomDate.toDateString() === todayString;
         })
       : mockData.recordedSymptoms;
-
     return (
       <ScrollView persistentScrollbar={true}>
         {symptomsRecorded.map((item, index) => (
