@@ -1,5 +1,4 @@
 import { StyleSheet } from 'react-native';
-import { commonStyles } from '../../styles';
 
 export const layoutStyles = StyleSheet.create({
   container: {
