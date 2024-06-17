@@ -1,5 +1,5 @@
 import { Image, Text, View } from 'react-native';
-import { layoutStyles } from './layout.styles';
+import { layoutStyles } from './Layout.styles';
 import React, { ReactNode, useMemo } from 'react';
 import { NavigationBar } from '..';
 import { BlurView } from 'expo-blur';
