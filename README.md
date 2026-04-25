@@ -1,4 +1,4 @@
-# Empower Mental Health App (very beta)
+# Empower Mental Health App (Proof of Concept - Beta)
 
 [![Expo Application](https://brightcode.io/badge/empower-mental-health-app.svg)](https://brightcode.io/empower-mental-health-app)
 
@@ -6,7 +6,7 @@
 
 ## Description
 
-The Empower Mental Health App is designed to offer users a basic platform for reflection, mood tracking, and accessing helpful resources. It's a starting point for building a more robust mental wellness tool.
+The Empower Mental Health App is designed to offer users a basic platform for reflection, mood tracking, and accessing helpful resources. (This project represents an initial exploration of React Native and Expo for this application.)
 
 ## Screenshots
 
