@@ -1,5 +1,5 @@
+import { colors, commonStyles } from '@/app/styles';
 import { StyleSheet } from 'react-native';
-import { colors, commonStyles } from '../../styles';
 
 const common = StyleSheet.create({
   text: {

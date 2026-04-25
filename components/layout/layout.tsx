@@ -1,9 +1,9 @@
-import { Image, Text, View } from 'react-native';
-import { layoutStyles } from './Layout.styles';
-import React, { ReactNode, useMemo } from 'react';
-import { NavigationBar } from '..';
+import { commonStyles } from '@/app/styles';
 import { BlurView } from 'expo-blur';
-import { commonStyles } from '../../styles';
+import React, { ReactNode, useMemo } from 'react';
+import { Image, Text, View } from 'react-native';
+import { NavigationBar } from '../navigationBar/NavigationBar';
+import { layoutStyles } from './layout.styles';
 
 type Screens = 'Home' | 'Appointments' | 'Bookmarks' | 'Settings';
 

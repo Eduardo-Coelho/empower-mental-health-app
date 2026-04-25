@@ -1,7 +1,7 @@
+import { colors } from '@/app/styles';
 import { TouchableOpacity, View } from 'react-native';
 import IconFoundation from 'react-native-vector-icons/Foundation';
 import { navigationStyles } from './NavigationBar.styles';
-import { colors } from '../../styles';
 
 interface NavigationBarProps {
   navigation: any;

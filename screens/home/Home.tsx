@@ -1,5 +1,5 @@
-import { Text, View } from 'react-native';
-import { DailyReport, Layout } from '../../components';
+import { DailyReport } from '@/components/dailyReport/DailyReport';
+import { Layout } from '@/components/layout/layout';
 
 interface HomeProps {
   navigation: any;

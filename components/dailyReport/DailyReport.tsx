@@ -1,9 +1,9 @@
-import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
-import { dailyReportStyles } from './DailyReport.styles';
+import { colors, commonStyles } from '@/app/styles';
 import { BlurView } from 'expo-blur';
-import { colors, commonStyles } from '../../styles';
 import { useState } from 'react';
+import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { calculateWeeksPassed, formatDate } from './config';
+import { dailyReportStyles } from './DailyReport.styles';
 
 interface DailyReportProps {
   report: {
