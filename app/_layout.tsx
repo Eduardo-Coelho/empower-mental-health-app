@@ -1,7 +1,6 @@
 import {
   DarkTheme,
   DefaultTheme,
-  NavigationContainer,
   ThemeProvider,
 } from '@react-navigation/native';
 import 'react-native-reanimated';
@@ -28,19 +27,17 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <NavigationContainer>
-        <Stack.Navigator
-          screenOptions={{
-            headerShown: false,
-          }}
-          initialRouteName="Home"
-        >
-          <Stack.Screen name="Home" component={Home} />
-          <Stack.Screen name="Appointments" component={Appointments} />
-          <Stack.Screen name="Bookmarks" component={Bookmarks} />
-          <Stack.Screen name="Settings" component={Settings} />
-        </Stack.Navigator>
-      </NavigationContainer>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}
+        initialRouteName="Home"
+      >
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Appointments" component={Appointments} />
+        <Stack.Screen name="Bookmarks" component={Bookmarks} />
+        <Stack.Screen name="Settings" component={Settings} />
+      </Stack.Navigator>
     </ThemeProvider>
   );
 }
