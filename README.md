@@ -1,50 +1,63 @@
-# Welcome to your Expo app 👋
+# Empower Mental Health App (very beta)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+[![Expo Application](https://brightcode.io/badge/empower-mental-health-app.svg)](https://brightcode.io/empower-mental-health-app)
 
-## Get started
+**A simple app to promote mental wellness and provide support.**
 
-1. Install dependencies
+## Description
 
-   ```bash
-   npm install
-   ```
+The Empower Mental Health App is designed to offer users a basic platform for reflection, mood tracking, and accessing helpful resources. It's a starting point for building a more robust mental wellness tool.
 
-2. Start the app
+## Screenshots
 
-   ```bash
-   npx expo start
-   ```
+![App UI Screenshot](/IMGs/IMG!.png) <!-- Replace with the URL to your screenshot -->
 
-In the output, you'll find options to open the app in a
+## Getting Started
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+This project uses Expo to simplify the development process.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+**Prerequisites:**
 
-## Get a fresh project
+- Node.js and npm (or yarn) installed on your system.
+- An Expo development environment set up (see [https://docs.expo.dev/](https://docs.expo.dev/) for instructions).
 
-When you're ready, run:
+**Installation:**
 
-```bash
-npm run reset-project
-```
+1.  Clone the repository: `git clone https://github.com/your-username/empower-mental-health-app`
+2.  Navigate to the project directory: `cd empower-mental-health-app`
+3.  Install dependencies: `expo install`
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+**Running the App:**
 
-## Learn more
+- **Android:** `expo start --android`
+- **iOS (Simulator):** `expo start --ios`
+- **Web:** `expo start --web`
 
-To learn more about developing your project with Expo, look at the following resources:
+## Project Structure
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- `App.js`: The main entry point for your application.
+- `assets/`: Folder for storing images, fonts, and other assets.
+- `scripts/`: Folder for any custom scripts.
 
-## Join the community
+## Technologies Used
 
-Join our community of developers creating universal apps.
+- React Native
+- Expo
+- React Navigation
+- Expo Router
+- React Native Vector Icons
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Dependencies
+
+- `@expo/vector-icons`: Icon library.
+- `react-navigation`: Navigation library.
+- `expo-constants`: Provides access to device-specific information.
+- `expo-status-bar`: Status bar API for easy integration.
+
+## Contributing
+
+We welcome contributions to this project! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). (You'll need to create a LICENSE file if you intend to use the MIT license.)
