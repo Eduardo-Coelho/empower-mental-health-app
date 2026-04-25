@@ -43,7 +43,7 @@ export const dailyReportStyles = StyleSheet.create({
   },
 
   conditionsContainer: {
-    padding: 10,
+    padding: 5,
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -67,7 +67,7 @@ export const dailyReportStyles = StyleSheet.create({
   symptomCard: {
     justifyContent: 'flex-start',
     display: 'flex',
-    padding: 10,
+    padding: 20,
   },
   symptomCardBody: {
     marginTop: 10,
