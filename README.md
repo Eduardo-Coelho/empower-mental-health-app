@@ -10,7 +10,7 @@ The Empower Mental Health App is designed to offer users a basic platform for re
 
 ## Screenshots
 
-![App UI Screenshot](/IMGs/IMG!.png) <!-- Replace with the URL to your screenshot -->
+![App UI Screenshot](/IMGs/demo.png) <!-- Replace with the URL to your screenshot -->
 
 ## Getting Started
 
